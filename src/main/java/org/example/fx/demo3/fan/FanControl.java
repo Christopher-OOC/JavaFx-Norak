@@ -298,23 +298,7 @@ public class FanControl extends VBox {
     }
     public void stopFan() {
 
-        animation.stop();
-//
-//        Platform.runLater(() -> {
-//            slowDownAnimation.play();
-//        });
-//
-//        while (decrementAngle > 0.1) {
-//
-//        }
-//
-//        Platform.runLater(() -> {
-//            slowDownAnimation.stop();
-//            animation.stop();
-//        });
-//
-//        decrementAngle = 1;
-    }
+        animation.stop();}
 
     public void reverseFan() {
 
