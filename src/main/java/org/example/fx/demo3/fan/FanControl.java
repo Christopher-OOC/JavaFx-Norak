@@ -131,19 +131,6 @@ public class FanControl extends VBox {
         animation.setRate(4);
         animation.setCycleCount(Timeline.INDEFINITE);
 
-        slowDownAnimation = new Timeline(new KeyFrame(
-                Duration.millis(100),
-                e -> {
-
-                    decrementAngle = decrementAngle - 0.0001;
-                    System.out.println("Decrement: " + decrementAngle);
-
-                }
-        ));
-
-        slowDownAnimation.setCycleCount(Timeline.INDEFINITE);
-        slowDownAnimation.setRate(2);
-
         controlStart.setOnAction(e -> {
             changeClickColor();
             controlPane1.getChildren().remove(controlOne);
