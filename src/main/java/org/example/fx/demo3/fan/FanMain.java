@@ -1,10 +1,10 @@
 package org.example.fx.demo3.fan;
 
 import javafx.application.Application;
-import javafx.application.Platform;
+import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class FanMain extends Application {
@@ -21,6 +21,11 @@ public class FanMain extends Application {
         stackPane.getChildren().add(fan);
 
         BorderPane borderPane = new BorderPane();
+        borderPane.setBackground(new Background(new BackgroundFill(
+                Color.GOLD,
+                CornerRadii.EMPTY,
+                new Insets(0)
+        )));
 
         borderPane.setCenter(stackPane);
         borderPane.setLeft(fanControl);
